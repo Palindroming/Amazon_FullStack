@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="utf-8">
+    <title layout:fragment="title">기본 제목</title>
+
+    <!-- WebJars Bootstrap (선택) -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
+    <script th:src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+</head>
+<body class="container py-4">
+<header class="mb-3">
+    <h1 style = "visibility:hidden;">header</h1>
+</header>
+
+<main layout:fragment="content">
+
+</main>
+
+<footer class="mt-4 text-muted">
+    <h1 style = "visibility:hidden;">footer</h1>
+</footer>
+</body>
+</html>

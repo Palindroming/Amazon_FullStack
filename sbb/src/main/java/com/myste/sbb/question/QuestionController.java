@@ -17,7 +17,7 @@ public class QuestionController {
     private final QuestionService questionService;
 
 
-    @GetMapping("list")
+    @GetMapping("/list")
     public String list(Model model) {
 
         List<Question> questionList = this.questionService.getList();
@@ -39,5 +39,12 @@ public class QuestionController {
     public String root(){
         return "redirect:/question/list";
     }
+
+
+    @GetMapping("/create")
+    public String questionCreate(){
+        return "question_form";
+    }
+
 
 }

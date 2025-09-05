@@ -75,6 +75,12 @@
         <dependency>
             <groupId>nz.net.ultraq.thymeleaf</groupId>
             <artifactId>thymeleaf-layout-dialect</artifactId>
+            <version>3.3.0</version> <!-- Spring Boot 3.x / Thymeleaf 3.1 호환 -->
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>bootstrap</artifactId>
+            <version>5.3.3</version>
         </dependency>
 
         <dependency>
